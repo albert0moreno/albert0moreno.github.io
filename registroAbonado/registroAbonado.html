@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>USER REGISTER</title>
+        <meta charset="utf-8">
+        <script src="js/passwordsValidation.js"></script>
+        <script src="js/contrasenas.js"></script>
+        <script src="js/contrasenas2.js"></script>
+        <link rel="stylesheet" href="estilo/registroAbonado.css">
+        <link rel="stylesheet" href="estilo/mobile.css">
+        <link rel="stylesheet" href="estilo/tablet.css">
+        <link rel="stylesheet" href="estilo/squareScreen.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com"> 
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+            <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid&family=Londrina+Solid&family=Viga&family=Yellowtail&display=swap" rel="stylesheet">    
+    </head>
+
+    <body>
+
+        <div class="register">
+            <form method="post" onsubmit="usuarios.php">
+                <h1>HAZTE ABONADO</h1>
+
+                <p class="invitation">Porque el sentimiento<br/>nunca muere.</p>
+    
+                <input class="name" name="name" type="text" required autofocus minlength="2" maxlength="20" placeholder="Nombre">
+
+                <input class="surname" name="surname" type="text" required minlength="2" maxlength="30" placeholder="Apellidos">
+
+                <input class="birth" name="birth" type="text" required placeholder="Fecha de nacimiento">
+
+
+                <input class="user" name="user" type="text" required minlength="1" maxlength="20" placeholder="Nombre de usuario">
+    
+                <input class="passwd" name="password" type="password" required minlength="4" maxlength="50" placeholder="Contraseña" id="inputContraseña" oninput="mostrarOjo()">
+                <img class="mostrar" id="mostrar" src="imagenes/mostrar.svg" onclick="desactivarOjoMostrar();activarOjoOcultar();mostrarContraseña();">
+                <img class="ocultar" id="ocultar" src="imagenes/ocultar.svg" onclick="desactivarOjoOcultar();ocultarContraseña();activarOjoMostrar();">
+                </input>
+    
+                <input class="passwd2" name="password2" type="password" required minlength="4" maxlength="50" placeholder="Repetir contraseña" id="inputContraseña2" onclick="activationSubmit();" onkeyup="mostrarOjo2()">
+                <img class="mostrar2" id="mostrar2" src="imagenes/mostrar2.svg" onclick="desactivarOjoMostrar2();activarOjoOcultar2();mostrarContraseña2();">
+                <img class="ocultar2" id="ocultar2" src="imagenes/ocultar2.svg" onclick="desactivarOjoOcultar2();ocultarContraseña2();activarOjoMostrar2();">
+                </input>
+                
+    
+                <input class="email" name="email" type="email" required minlength="10" maxlength="40" placeholder="Correo electrónico">
+    
+                <input class="submit" id="submit" type="submit" value="Crear cuenta" onclick="validationPasswords();">
+            </form>
+            
+            <div class="haveAnAccount">
+                <p class="yesAccount">¿Ya eres abonado?</p>
+                <a class="link" href="../inicioAbonado/areaAbonado.html"><p class="login">Accede</p></a>
+            </div>
+        </div>
+
+
+
+            
+        </section>
+         </body>
+</html>
