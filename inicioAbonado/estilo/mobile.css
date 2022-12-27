@@ -1,2 +1,151 @@
 
 
+@media screen and (max-width: 600px){
+
+    html,body{
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .barraNavegación>a{
+        width: 25%;
+    }
+
+    .barraNavegación>a>div{
+        font-size: 24px;
+    }
+
+    section{
+        margin-top: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .login{
+        width: 55%;
+        height: 100%;
+    }
+
+    h1{
+        margin-top: 15%;
+        font-size: 35px;
+    }
+
+    .user{
+        margin-top: 10%;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+
+    html,body{
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .barraNavegación>a{
+        width: 25%;
+    }
+
+    .barraNavegación>a>div{
+        font-size: 24px;
+    }
+
+    section{
+        margin-top: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .login{
+        width: 55%;
+        height: 100%;
+    }
+
+    h1{
+        margin-top: 15%;
+        font-size: 35px;
+    }
+
+    .user{
+        margin-top: 10%;
+    }
+
+    .mostrar{
+        top:56%;
+        right: 30%;
+    }
+
+    .ocultar{
+        top:56%;
+        right: 30%;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    html,body{
+        margin: 0%;
+        padding: 0%;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .barraNavegación>a{
+        width: 25%;
+    }
+
+    .barraNavegación>a>div{
+        font-size: 24px;
+    }
+
+    section{
+        margin-top: 20%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .login{
+        width: 55%;
+        height: 100%;
+    }
+
+    h1{
+        margin-top: 15%;
+        font-size: 35px;
+    }
+
+    .user{
+        margin-top: 10%;
+    }
+
+    .mostrar{
+        top:49.5%;
+        right: 30%;
+    }
+
+    .ocultar{
+        top:49.5%;
+        right: 30%;
+    }
+}
