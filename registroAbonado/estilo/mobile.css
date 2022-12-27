@@ -17,8 +17,8 @@ html,body{
     }
     
     .register{
-        width: 70%;
-        height: 80%;
+        width: 80%;
+        height: 60%;
         display: flex;
         flex-direction: column;
         margin-top: 10%;
