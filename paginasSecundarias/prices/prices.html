@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Precios</title>
+    <script src="funciones.js"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/">
+
+    <!-- PÁGINA HECHA CON BOOSTRAP -->
+
+<link href="bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="pricing.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header>
+      <div class="empresa">
+          <img class="logo" src="../../images/logo.png" alt="Logo">
+      </div>
+
+      <nav>
+          <div><a href="../../index.html">Inicio</a></div>
+          <div><a class="actual" href="paginasSecundarias/prices/prices.html">Precios</a></div>
+          <div><a href="../login/login.html">Login</a></div>
+          <div><a href="../contacto/contacto.html">Contacto</a></div>
+          <div>
+              <img class="luna" src="../../images/moon.svg" alt="Oscuro" onclick="oscuro()">
+              <img class="sol" src="../../images/sun.svg" alt="Claro" onclick="claro()">
+          </div>
+      </nav>
+  </header>
+
+
+  <!-- Imagen de los check de la tabla  -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+      <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+    </svg>
+
+    <div class="container py-3">
+
+        <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4">
+          <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Precios</h1>
+            <p id="intro" class="fs-5 text-muted">Consigue darle el impulso que merece a tu negocio <br> con los mejores precios del mercado.</p>
+          </div>
+        </div>
+
+      <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Prueba gratis</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">0€<small class="text-muted fw-light">/30 días</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>1 anuncio /día</li>
+                  <li>1 usuario</li>
+                  <li>1 curso gratis</li>
+                  <li>Soporte por correo</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-outline-primary">Prueba gratis</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm">
+              <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Avanzado</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">399€<small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>50 anuncios /día</li>
+                  <li>Hasta 10 usuarios</li>
+                  <li>Acceso a todos los cursos</li>
+                  <li>Soporte por correo prioritario</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Darse de alta</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+              <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Pro</h4>
+              </div>
+              <div class="card-body">
+                <h1 class="card-title pricing-card-title">799€<small class="text-muted fw-light">/mes</small></h1>
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>200 anuncios /día</li>
+                  <li>Hasta 10 usuarios</li>
+                  <li>Acceso a todos los cursos</li>
+                  <li>Soporte por correo prioritario</li>
+                </ul>
+                <button type="button" class="w-100 btn btn-lg btn-primary">Darse de alta</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="display-6 text-center mb-4">Compara los planes</h2>
+
+        <div class="table-responsive">
+          <table class="table text-center">
+            <thead>
+              <tr>
+                <th style="width: 34%;"></th>
+                <th style="width: 22%;">Gratis</th>
+                <th style="width: 22%;">Avanzado</th>
+                <th style="width: 22%;">Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <th scope="row" class="text-start">Anuncios diarios</th>
+                <td>1</td>
+                <td>50</td>
+                <td>200</td>
+              </tr>
+              
+              <tr>
+                <th scope="row" class="text-start">Usuarios</th>
+                <td>1</td>
+                <td>10</td>
+                <td>10</td>
+              </tr>
+             
+              <tr>
+                <th scope="row" class="text-start">Acceso a cursos</th>
+                <td>1</td>
+                <td>Ilimitado</td>
+                <td>Ilimitado</td>
+              </tr>
+              <tr>
+                <th scope="row" class="text-start">Soporte por correo</th>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+                <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-left">
+          <div>
+              <a href="prices.html"><div>Precios</div></a>
+              <a href="../contacto/contacto.html"><div>Contacto</div></a>
+              <a href="#"><div>Cookies</div></a>
+          </div>
+
+          <div>
+              <a href="../login/login.html"><div>Login</div></a>
+              <a href="#"><div>Registro</div></a>
+              <a href="#"><div>Sobre nosotros</div></a>  
+          </div>
+      </div>
+
+      <div class="footer-center">
+          <div class="name">Pro Audience</div>
+          
+          <div class="RRSS">
+              <a href="http://instagram.com" target="_blank"><img src="../../images/instagram.svg" alt="Instagram"></a>
+              <a href="http://twitter.com" target="_blank"><img src="../../images/twitter.svg" alt="Twitter"></a>
+              <a href="http://facebook.com" target="_blank"><img src="../../images/facebook.svg" alt="Facebook"></a>
+              <a href="http://gmail.com" target="_blank"><img src="../../images/correo.svg" alt="Correo"></a>
+          </div>
+
+      </div>
+
+      <div class="footer-right">
+          <div>
+              <h3>Suscríbete a nuestra newsletter</h3>
+              <p class="newsletter-p">Recibirás correos de nuestras promociones semanalmente</p>
+          </div>
+    
+          <form method="post" class="email">
+                  <input type="email" placeholder="juancuesta@gmail.com" required>
+                  <input class="submit" type="submit">
+          </form>
+      </div>
+    </footer>
+
+  </body>
+</html>
