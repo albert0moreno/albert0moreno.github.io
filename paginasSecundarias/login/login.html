@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
+        <link rel="icon" type="image/png" href="../../images/logo.png">
         <link rel="stylesheet" href="login.css">
         <script src="funciones.js"></script>
     </head>
@@ -36,7 +37,7 @@
                 <form class="login" method="post">
                     <input type="text" placeholder="Usuario">
                     <input id="password" type="password" placeholder="Contraseña">
-                    <div class="mostrar"><input onclick="mostrarPassword()" type="checkbox"><label for="checkbox">Mostrar contraseña</label></div>
+                    <div class="mostrar"><input onclick="mostrarPassword()" class="checkbox" type="checkbox"><label for="checkbox">Mostrar contraseña</label></div>
                     <input class="submit" type="submit">
                 </form>
 
@@ -81,7 +82,7 @@
                     <p class="newsletter-p">Recibirás correos de nuestras promociones semanalmente</p>
                 </div>
           
-                <form class="form-correo" class="email">
+                <form class="form-correo" method="post" class="email">
                         <input type="email" placeholder="juancuesta@gmail.com" required>
                         <input class="submit2" type="submit">
                 </form>

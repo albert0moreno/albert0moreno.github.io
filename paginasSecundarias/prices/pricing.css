@@ -6,17 +6,16 @@ html,body{
 }
 
 /*  <CABECERA>  */
-header{
-  width: 100%;
-  height: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: dodgerblue;
-}
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: dodgerblue;
+    height: 30%;
+  }
 
   .empresa{
-      width: 25%;
       margin-left: 5%;
       display: flex;
       justify-content: center;
@@ -24,14 +23,12 @@ header{
   }
 
       .logo{
-          display: flex;
-          width: 100%;
+          width: 50%;
           margin-top: -5%;
       }
 
 
   nav{
-      width: 50%;
       height: 25%;
       display: flex;
       justify-content:space-between;
@@ -95,15 +92,16 @@ header{
 
 /*  <PIE DE PÁGINA>  */
 footer{
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
     height: 30%;
     background-color: dodgerblue;
+    margin-top:2% ;
 }
 
     footer > div{
         display: flex;
-        width: 33.33%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -221,70 +219,53 @@ footer{
         }
 /*  </PIE DE PAGINA>  */
 
-
 /* ARREGLOS PARA RESOLUCIONES MÁS PEQUEÑAS*/
-@media (min-width: 0px) and (max-width: 800px){
+@media (min-width: 0px) and (max-width: 750px){
     html,body{
-        height: 90%;
+        height: 150%;
     }
 
-    /* <CABECERA> */
-    nav{
-        width: 60%;
+    header{
+        height: 10%;
     }
 
-        .empresa{
-            width: 40%;
-        }
+    .logo{
+        width: 100%;
+    }
 
-        a{
-            font-size: 2vw;
-        }
+    nav > div {
+        width: 20%;
+      }
 
-        .luna{
-            width: 2.5vw;
-        }
+    a {
+        font-size: 2.3vw;
+      }
 
-        .sol{
-            width: 2.5vw;
-        }
-    /* </CABECERA> */
+    .luna {
+        width: 2.3vw;
+    }
 
-    /* <FOOTER> */
+    footer{
+        height: 10%;
+    }
 
     .footer-left > div > a > div{
-        font-size: 2vw;
-    }    
-           
+        font-size: 2.5vw;
+    }
+
     .name{
-        width: 70%;
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .RRSS > a > img{
-        width: 4vw;
-    }             
-    
+        width: 2.5vw;
+    }
+
     h3{
-        font-size: 2.3vw;
-    }       
-    
-    .newsletter-p{
-        font-size:1vw;
-    }
-    
-    input{
-        width: 50%;
-        font-size: 1vw;
-    }
-    
-    .submit{
-        width: 25%;
-        font-size: 1vw;
+        font-size: 2.5vw;
     }
 
-
-
-
-    
+        .newsletter-p{
+            font-size:1.5vw;
+        }
 }

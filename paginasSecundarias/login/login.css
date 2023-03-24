@@ -11,14 +11,14 @@ html,body{
 header{
     width: 100%;
     height: 30%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
     align-items: center;
     justify-content: space-between;
     background-color: dodgerblue;
 }
 
     .empresa{
-        width: 25%;
         margin-left: 5%;
         display: flex;
         justify-content: center;
@@ -27,14 +27,13 @@ header{
 
         .logo{
             display: flex;
-            width: 100%;
+            width: 50%;
             margin-top: -5%;
         }
 
 
     nav{
-        width: 50%;
-        height: 20%;
+        height: 25%;
         display: flex;
         justify-content:space-between;
         align-items: center;
@@ -191,15 +190,15 @@ header{
 
 /*  <PIE DE PÁGINA>  */
 footer{
-    display: flex;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100%;
     height: 30%;
     background-color: dodgerblue;
 }
 
     footer > div{
         display: flex;
-        width: 33.33%;
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -328,29 +327,79 @@ footer{
 
 
 /* ARREGLOS PARA RESOLUCIONES MÁS PEQUEÑAS*/
-@media (min-width: 0px) and (max-width: 800px){
+@media (min-width: 0px) and (max-width: 750px){
+    html,body{
+        height: 150%;
+    }
+
+    header{
+        height: 10%;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    nav > div {
+        width: 20%;
+      }
+
+    a {
+        font-size: 2.3vw;
+      }
+
+    .luna {
+        width: 2.3vw;
+    }
+
     .container{
         flex-direction: column;
     }
 
-    .container > div{
-        width: 100%;
-        height: 50%;
-    }
+        .container > div{
+            width: 100%;
+            height: 50%;
+        }
 
-    header{
-        height: 20%;
-    }
+            .container > div > form > input{
+                height: 5%;
+                font-size: 3vw;
+            }
 
-    .luna{
-        width: 2.5vw;
-    }
+            .checkbox{
+                width: 8% !important;
+            }
 
-    .sol{
-        width: 2.5vw;
-    }
+                label{
+                    font-size: 3vw !important;
+                }
+
+
+            .container > div > div > div{
+                font-size: 3vw;
+            }
 
     footer{
-        height: 15%;
+        height: 10%;
     }
+
+    .footer-left > div > a > div{
+        font-size: 2.5vw;
+    }
+
+    .name{
+        font-size: 3vw;
+    }
+
+    .RRSS > a > img{
+        width: 2.5vw;
+    }
+
+    h3{
+        font-size: 2.5vw;
+    }
+
+        .newsletter-p{
+            font-size:1.5vw;
+        }
 }
